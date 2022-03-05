@@ -6,7 +6,7 @@ import Cart from "../Cart/index";
 const Home = ({ productos }) => {
   return (
     <div className="home">
-      <Cart />
+      <Cart productos={productos} />
       <Productos productos={productos} />
     </div>
   );

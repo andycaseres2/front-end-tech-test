@@ -1,7 +1,11 @@
 .container {
+  position: relative;
+  top: 200px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 0fr);
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  grid-auto-rows: 22rem;
   grid-row-gap: 20px;
   grid-column-gap: 75px;
   justify-content: center;
