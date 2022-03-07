@@ -1,5 +1,4 @@
 import "./styles.css";
-import phone from "../images/phone.jpg";
 import { useContext } from "react";
 import CartContext from "../../context/CardContext";
 
@@ -9,13 +8,13 @@ const Productos = ({ productos }) => {
     <div className="container">
       {productos.map((p) => (
         <div className="productos" key={p._id}>
-          <img className="img" src={phone} alt={p.name} />
+          <img className="img" src={p.image} alt={p.name} />
           <div className="info">
             <p>
               {p.name} - ${p.price}
             </p>
           </div>
-          <button className="btn" onClick={() => AddItemToCart(productos)}>
+          <button className="btn" onClick={() => AddItemToCart(p._id)}>
             Add to Card
           </button>
         </div>

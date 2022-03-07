@@ -1,6 +1,7 @@
 const express = require("express");
 const products = require("./data/products");
 const cors = require("cors");
+const image = require("/public/images");
 
 const app = express();
 app.use(cors());

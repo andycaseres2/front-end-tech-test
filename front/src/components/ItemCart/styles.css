@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
+  background-color: transparent;
 }
 
 .itemcart img {
@@ -14,6 +15,7 @@
 }
 
 .dataContainer {
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -58,6 +60,7 @@
 
 .rigth-div {
   background-color: #fb3939;
+  color: black;
   width: 20px;
   height: 20px;
   border-radius: 999px;

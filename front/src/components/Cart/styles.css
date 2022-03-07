@@ -4,6 +4,7 @@
   display: flex;
   justify-content: flex-end;
   z-index: 2;
+  position: relative;
 }
 
 .btnCartContainer {
@@ -20,13 +21,23 @@ svg {
 }
 
 .btnCart {
-  background-color: #222222;
+  background-image: radial-gradient(
+    circle at 50% -20.71%,
+    #cfa8ff 0,
+    #9d8bff 25%,
+    #6c6cd8 50%,
+    #3f4ea4 75%,
+    #153375 100%
+  );
   width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
+  position: relative;
+  top: 20px;
+  right: 20px;
 }
 
 .productsNumber {
@@ -44,15 +55,25 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 20px;
+  right: 20px;
 }
 
 .cart {
   position: absolute;
+  top: 50px;
   margin-top: 10px;
   margin-right: 20px;
   border-radius: 30px;
-  background-color: #222222;
-  color: white;
+  color: rgb(0, 0, 0);
+  background-image: radial-gradient(
+    circle at 50% -20.71%,
+    #cfa8ff 0,
+    #9d8bff 25%,
+    #6c6cd8 50%,
+    #3f4ea4 75%,
+    #153375 100%
+  );
 }
 .cart h2 {
   text-align: center;
@@ -64,9 +85,10 @@ svg {
   text-align: center;
   margin-top: 5px;
   font-size: 14px;
-  width: 200px;
+  width: 350px;
+  font-size: 20px;
+  font-weight: bold;
 }
-
 .total {
   text-align: center;
   font-size: 20px;
@@ -80,6 +102,7 @@ svg {
   max-height: 200px;
   overflow-y: scroll;
   margin-top: 5px;
+  position: relative;
 }
 
 ::-webkit-scrollbar {
